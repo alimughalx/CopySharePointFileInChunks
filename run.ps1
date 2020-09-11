@@ -145,7 +145,7 @@ $DestinationPassword = Read-Host "Enter Password for Destination User: $Destinat
 $SourceSiteUrl = "http://intranet/sites/xyz"
 $SourceRelativeURL = "/sites/xyz/TestLibrary/myfile.pptx" #server relative URL here with library Name and file name with extension
 $SourceUsername = "domain\xyz"
-
+$SourcePassword = Read-Host "Enter Password for Source User: $SourceUsername" -AsSecureString
 #Set a file name with extension
 $FileNameWithExt = "myfile.pptx"
 
